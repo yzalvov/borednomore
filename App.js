@@ -3,22 +3,22 @@ import { StatusBar } from "expo-status-bar"
 import { View } from "react-native"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { OnboardingScreen } from "./Onboarding"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import Ionicons from "react-native-vector-icons/Ionicons"
-import { HomeTab } from "./Home"
-import { FavoritesTab } from "./Favorites"
 import {
+  OnboardingScreen,
+  HomeTab,
+  FavoritesTab,
+  FilterScreen,
   ShuffleHeaderButton,
   FilterHeaderButton,
   GreenTopMark,
-} from "./components"
+} from "./src"
 import {
   GlobalContextProvider,
   GlobalDispatchContext,
   GlobalStateContext,
-} from "./context"
-import { FilterScreen } from "./Filter/FilterScreen"
+} from "./src/context"
 
 const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
